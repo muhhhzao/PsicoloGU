@@ -202,7 +202,7 @@ window.addEventListener('load', revelar);
     <label for="email">Seu e-mail:</label>
     <input type="email" id="email" required>
   
-    <label for="motivo">Motivo do contato:</label>
+    <label for="motivo">Motivo do meu contato:</label>
     <textarea id="motivo" rows="4" required></textarea>
   
     <button type="submit">Enviar ao WhatsApp</button>
@@ -217,10 +217,9 @@ window.addEventListener('load', revelar);
     const email = document.getElementById("email").value;
     const motivo = document.getElementById("motivo").value;
   
-    const mensagem = `Olá, me chamo ${nome}.
-  Idade: ${idade}
-  Email: ${email}
-  
+    const mensagem = `Olá Gustavo, me chamo ${nome}.
+  Minha Idade: ${idade}
+  Meu Email: ${email}
   Motivo do contato:
   ${motivo}`;
   
