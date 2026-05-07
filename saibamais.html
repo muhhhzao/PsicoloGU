@@ -199,9 +199,6 @@ window.addEventListener('load', revelar);
     <label for="idade">Idade:</label>
     <input type="number" id="idade" required>
   
-    <label for="email">Seu e-mail:</label>
-    <input type="email" id="email" required>
-  
     <label for="motivo">Motivo do contato (Conte Brevemente):</label>
     <textarea id="motivo" rows="4" required></textarea>
   
@@ -214,14 +211,9 @@ window.addEventListener('load', revelar);
   
     const nome = document.getElementById("nome").value;
     const idade = document.getElementById("idade").value;
-    const email = document.getElementById("email").value;
     const motivo = document.getElementById("motivo").value;
   
-    const mensagem = `Olá Gustavo, me chamo ${nome}.
-  Minha Idade: ${idade}
-  Meu Email: ${email}
-  Motivo do contato:
-  ${motivo}`;
+    const mensagem = `Olá Gustavo Cordeiro, me chamo ${nome}, tenho ${idade} anos e o motivo do contato é ${motivo}`;
   
     const mensagemFormatada = encodeURIComponent(mensagem);
   
